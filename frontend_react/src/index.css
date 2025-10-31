@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 全局基础重置 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* 推荐加上这句，避免布局计算问题 */
+}
+
+/* 确保页面根节点撑满整个视口 */
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+/*滚动条  定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸 */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    background-color: #EDEFF3;
+}
+
+/*滑块  */
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #C0C0C0;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+/*滚槽   轨道 内阴影+圆角*/
+::-webkit-scrollbar-track {
+    width: 6px;
+    background-color: #F5F5F5;
+}

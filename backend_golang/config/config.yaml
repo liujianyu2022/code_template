@@ -1,0 +1,55 @@
+app:
+  name: "backend"
+  port: ":8080"
+  mode: "debug"
+
+# ToDo
+mysql:
+  host: "127.0.0.1"
+  port: "3306"
+  user: "root"
+  password: "liujianyu"
+  dbname: "dapp_rwa_01"
+  max_open_conns: 100
+  max_idle_conns: 10
+  conn_max_lifetime: 300
+
+# mysql:
+#   host: "45.78.192.121"
+#   port: "3000"
+#   user: "root"
+#   password: "DaPPrWA01"
+#   dbname: "dapp_rwa_01"
+#   max_open_conns: 100
+#   max_idle_conns: 10
+#   conn_max_lifetime: 300
+
+# ToDo
+# mysql:
+#   host: "mysql8"
+#   port: "3306"
+#   user: "root"
+#   password: "Leoyu2025"
+#   dbname: "dapp_01"
+#   max_open_conns: 100
+#   max_idle_conns: 10
+#   conn_max_lifetime: 300
+
+redis:
+  host: "192.168.137.84"
+  port: "6379"
+  password: "xxxx"
+  db: 0
+  pool_size: 100
+
+jwt:
+  secret: "THIS-IS-SeCret-kEy"         # 建议使用复杂的随机字符串
+  expire_time: 24                   # token过期时间(小时)
+
+# 主网
+token:
+  rpc_url: "https://bnb-mainnet.g.alchemy.com/v2/d2qkHgPg01aAh75I8zqTU"               # yuchain100
+  private_key: "e6..."     # 这是热钱包的私钥
+  token_address: "0xa2C2dcEc1f61C52684E237fBd3989598bc4B5AAF"                         # 主网 CFL
+  usdt_address: "0x55d398326f99059fF775485246999027B3197955"                          # 主网 USDT
+  chain_id: 56

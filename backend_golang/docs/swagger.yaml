@@ -1,0 +1,33 @@
+definitions:
+  api.Response:
+    properties:
+      code:
+        type: string
+      data: {}
+      message:
+        type: string
+    type: object
+  api.UserDTO:
+    properties:
+      chargeAddress:
+        description: 充值地址
+        type: string
+      userAddress:
+        type: string
+    type: object
+info:
+  contact: {}
+paths:
+  /user/all:
+    get:
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/api.Response'
+      summary: 获取所有的用户信息
+      tags:
+      - User
+swagger: "2.0"

@@ -1,0 +1,17 @@
+frontend_react/node_modules/
+frontend_react/dist/
+
+
+contract_hardhat/node_modules
+# Hardhat files
+contract_hardhat/cache
+contract_hardhat/artifacts
+
+# TypeChain files
+contract_hardhat/typechain
+contract_hardhat/typechain-types
+
+
+# solidity-coverage files
+contract_hardhat/coverage
+contract_hardhat/coverage.json
