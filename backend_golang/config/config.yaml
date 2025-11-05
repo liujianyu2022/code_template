@@ -14,15 +14,6 @@ mysql:
   max_idle_conns: 10
   conn_max_lifetime: 300
 
-# mysql:
-#   host: "45.78.192.121"
-#   port: "3000"
-#   user: "root"
-#   password: "DaPPrWA01"
-#   dbname: "dapp_rwa_01"
-#   max_open_conns: 100
-#   max_idle_conns: 10
-#   conn_max_lifetime: 300
 
 # ToDo
 # mysql:
@@ -45,6 +36,16 @@ redis:
 jwt:
   secret: "THIS-IS-SeCret-kEy"         # 建议使用复杂的随机字符串
   expire_time: 24                   # token过期时间(小时)
+
+mongo:
+  uri: "mongodb://root:password@127.0.0.1:27017"
+  database: "dapp_rwa_01"
+
+es:
+  addresses:
+    - "http://127.0.0.1:9200"
+  username: "elastic"
+  password: "changeme"
 
 # 主网
 token:

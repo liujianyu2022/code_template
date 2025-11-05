@@ -32,10 +32,32 @@ type JWTConfig struct {
 	ExpireTime int    `yaml:"expire_time"` // 过期时间(小时)
 }
 
+type MongoConfig struct {
+	URI      string `yaml:"uri"`
+	Database string `yaml:"database"`
+}
+
+type ESConfig struct {
+	Addresses []string `yaml:"addresses"` // 支持多个节点
+	Username  string   `yaml:"username"`
+	Password  string   `yaml:"password"`
+}
+
+type RedisConfig struct {
+	Host     string `yaml:"host"`
+	Port     string `yaml:"port"`
+	Password string `yaml:"password"`
+	DB       int    `yaml:"db"`
+	PoolSize int    `yaml:"pool_size"`
+}
+
 type Config struct {
 	App   AppConfig   `yaml:"app"`
 	MySQL MySQLConfig `yaml:"mysql"`
-	JWT   JWTConfig   `yaml:"jwt"` // 确保有这个标签
+	JWT   JWTConfig   `yaml:"jwt"` 
+	Mongo MongoConfig `yaml:"mongo"`
+	ES    ESConfig    `yaml:"es"`
+	Redis RedisConfig `yaml:"redis"`
 }
 
 

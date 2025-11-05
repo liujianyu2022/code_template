@@ -32,7 +32,9 @@ var repositorySet =wire.NewSet(
 
 var dbSet = wire.NewSet(
 	db.NewMySQL,
-	// db.NewRedisClient,
+	db.NewRedisClient,
+	db.NewMongoClient,
+	db.NewESClient,
 )
 
 var routerSet = wire.NewSet(

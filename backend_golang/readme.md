@@ -1,4 +1,21 @@
 ### backend
+0. go安装，代理设置， gopls安装
+下载安装包的地址：https://go.dev/dl/
+下载安装包 go1.24.0.windows-amd64.msi，点击运行，设置自定义的安装目录即可
+
+
+```shell
+# GOPATH设置 （ 第三方依赖（模块、包、库）安装位置由 GOPATH 决定，不是 GOROOT ）
+go env GOPATH
+setx GOPATH D:\GoWorkspace   # 或者在 PowerShell中执行： $env:GOPATH = "D:\GoWorkspace"
+
+# 设置代理（如果连不上可以设置）
+go env -w GOPROXY=https://goproxy.cn,direct
+
+# 安装 gopls
+go install golang.org/x/tools/gopls@latest
+```
+
 1. go项目初始化
 ```shell
 cd ./backend

@@ -34,6 +34,13 @@ npm install --save-dev postcss-loader
 注意：这里为了防止版本冲突，使用tailwindcss@3
 这里可运行的版本推荐：tailwindcss: "^3.4.18"   postcss: "^8.5.6"    postcss-loader": "^8.2.0"   autoprefixer: "^10.4.21"
 
+4. Redux 相关依赖
+```shell
+npm install react-redux@8 @types/react-redux@7
+
+npm install redux-devtools-extension@2
+```
+
 
 ## 配置文件
 1. package.json
