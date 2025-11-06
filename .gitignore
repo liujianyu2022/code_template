@@ -1,6 +1,9 @@
 frontend_react/node_modules/
 frontend_react/dist/
 
+frontend_vue3/node_modules/
+frontend_vue3/dist/
+
 
 contract_hardhat/node_modules
 # Hardhat files
