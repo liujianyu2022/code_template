@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
+const getProxy = require("./proxy")
 
 module.exports = {
   entry: './src/index.tsx',
@@ -61,6 +62,7 @@ module.exports = {
     port: 3000,
     historyApiFallback: true,
     open: true,
+    proxy: getProxy()
   },
   optimization: {
     moduleIds: 'deterministic',
